@@ -153,7 +153,7 @@ void print_cell_matrix(const Cell_matrix* cm)
     {
         for (col = 0; col < cm->width; col++)
         {
-            if (cm.state[row][col] == 1)
+            if (cm->state[row][col] == 1)
                 printf("█");
             else
                 printf(" ");
