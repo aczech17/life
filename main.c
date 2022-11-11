@@ -42,7 +42,7 @@ int main(int argc, char** argv)
 
     while(!stop)
     {
-        print_cell_matrix(cm);
+        print_cell_matrix(&cm);
         evolve(&cm);
     }
 
