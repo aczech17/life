@@ -146,16 +146,15 @@ void evolve(Cell_matrix* cm)
         }
 }
 
-void print_cell_matrix(Cell_matrix cm)
+void print_cell_matrix(const Cell_matrix* cm)
 {
     int row, col;
-    for (row = 0; row < cm.height; row++)
+    for (row = 0; row < cm->height; row++)
     {
-        for (col = 0; col < cm.width; col++)
+        for (col = 0; col < cm->width; col++)
         {
-            const char* block = "█";
             if (cm.state[row][col] == 1)
-                printf("%s", block);
+                printf("█");
             else
                 printf(" ");
         }
